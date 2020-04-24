@@ -1,0 +1,25 @@
+/* fonts available
+font-family: 'Manrope', sans-serif; */
+.buttonSection {
+    margin: 2% 2% 2% 2%;
+}
+
+.buttonExplanation {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 400;
+}
+
+#buttonCollection2 button {
+    padding-right: 5%;
+    margin-left: 5%;
+}
+
+#buttonCollection3 button {
+    padding-left: 5%;
+    margin-right: 5%;
+}
+
+#buttonCollection4 button {
+    padding: 3%;
+    margin-right: 5%;
+}
