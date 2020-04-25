@@ -1,14 +1,70 @@
 /* fonts available
-font-family: 'Manrope', sans-serif; */
-.buttonSection {
-    margin: 2% 2% 2% 2%;
-}
+font-family: 'Manrope', sans-serif;
+font-family: 'Spartan', sans-serif;
+font-family: 'Abel', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Open Sans', sans-serif; */
 
-.buttonExplanation {
+body {
     font-family: 'Manrope', sans-serif;
     font-weight: 400;
 }
 
+
+/* #region  Fonts */
+.primaryFont {
+    font-family: 'Manrope', sans-serif;
+}
+
+.secondaryFont {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.optFont1 {
+    font-family: 'Spartan', sans-serif;
+}
+
+.optFont2 {
+    font-family: 'Abel', sans-serif;
+}
+
+.optFont3 {
+    font-family: 'Roboto', sans-serif;
+}
+
+.skinnyFont {
+    font-weight: 200;
+}
+
+.standardFont {
+    font-weight: 400;
+}
+
+.heavyFont {
+    font-weight: 600;
+}
+
+/* #endregion */
+
+.container {
+    margin: 2%;
+}
+
+button {
+    background-color: blue;
+    color: white;
+    border-radius: 15px;
+    border: none;
+    box-shadow: 2px 3px 4px black;
+}
+
+button:hover {
+    box-shadow: 1px 2px 2px black;
+}
+
+button:active{
+    box-shadow: none;
+}
 #buttonCollection2 button {
     padding-right: 5%;
     margin-left: 5%;
