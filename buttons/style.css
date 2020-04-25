@@ -8,6 +8,7 @@ font-family: 'Open Sans', sans-serif; */
 body {
     font-family: 'Manrope', sans-serif;
     font-weight: 400;
+    outline: none;
 }
 
 
@@ -53,9 +54,12 @@ body {
 button {
     background-color: blue;
     color: white;
-    border-radius: 15px;
+    border-radius: 12px;
     border: none;
     box-shadow: 2px 3px 4px black;
+    height: 35px;
+    width: 100px;
+    outline:none;
 }
 
 button:hover {
@@ -63,6 +67,10 @@ button:hover {
 }
 
 button:active{
+    box-shadow: none;
+}
+
+.noShadow {
     box-shadow: none;
 }
 #buttonCollection2 button {
