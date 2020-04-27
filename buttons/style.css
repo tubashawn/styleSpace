@@ -1,10 +1,22 @@
 :root {
     --shadow: rgba(0, 0, 0, 0.3);
+    --colorOne: #157145;
+    --colorTwo: #57A773;
+    --colorThree: #6A8EAE;
+    --colorFour: #9BD1E5;
+    --colorFive: #D1FAFF;
+    --colorSix: black;
+    --colorSeven: white;
+    --colorEight: red;
+    --colorNine: blue;
     --manrope: 'Manrope', sans-serif;
     --spartan: 'Spartan', sans-serif;
     --abel: 'Abel', sans-serif;
     --roboto: 'Roboto', sans-serif;
     --openSans: 'Open Sans', sans-serif;    
+    --light: 200;
+    --standard: 400;
+    --heavy: 600;
 }
 
 
@@ -25,35 +37,35 @@ font-family: 'Roboto', sans-serif;
 font-family: 'Open Sans', sans-serif; */
 
 .primaryFont {
-    font-family: 'Manrope', sans-serif;
+    font-family: var(--manrope);
 }
 
 .secondaryFont {
-    font-family: 'Open Sans', sans-serif;
+    font-family: var(--openSans)
 }
 
 .optFont1 {
-    font-family: 'Spartan', sans-serif;
+    font-family: var(--spartan);
 }
 
 .optFont2 {
-    font-family: 'Abel', sans-serif;
+    font-family: var(--abel);
 }
 
 .optFont3 {
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--roboto)
 }
 
-.skinnyFont {
-    font-weight: 200;
+.lightFont {
+    font-weight: var(--light);
 }
 
 .standardFont {
-    font-weight: 400;
+    font-weight: var(--standard);
 }
 
 .heavyFont {
-    font-weight: 600;
+    font-weight: var(--heavy);
 }
 
 /* #endregion */
@@ -62,9 +74,9 @@ font-family: 'Open Sans', sans-serif; */
     margin: 2%;
 }
 
-button {
-    background-color: rgb(97, 97, 243);
-    color: rgb(8, 6, 6);
+.btn {
+    background-color: var(--colorOne);
+    color: var(--colorSeven);
     border-radius: 12px;
     border: none;
     box-shadow: 2px 3px 4px var(--shadow);
@@ -72,7 +84,20 @@ button {
     display: inline-block;
     text-align: center;
     outline:none;
+    font-family: var(--openSans);
+    font-weight: var(--standard);
+    padding-left: 1%;
+    padding-right: 1%;
+}
 
+.btn-blue {
+    background-color: var(--colorThree);
+    color: var(--colorSeven);
+}
+
+.btn-cream {
+    background-color: var(--colorFive);
+    color: var(--colorSix);
 }
 
 button:hover {
