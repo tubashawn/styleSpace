@@ -4,16 +4,18 @@
     --colorTwo: #57A773;
     --colorThree: #6A8EAE;
     --colorFour: #9BD1E5;
-    --colorFive: #D1FAFF;
+    --colorFive: #d1faff;
     --colorSix: black;
     --colorSeven: white;
     --colorEight: red;
-    --colorNine: blue;
+    --colorNine: rgb(255, 200, 148);
+    --colorTen: grey;
+
     --manrope: 'Manrope', sans-serif;
     --spartan: 'Spartan', sans-serif;
     --abel: 'Abel', sans-serif;
     --roboto: 'Roboto', sans-serif;
-    --openSans: 'Open Sans', sans-serif;    
+    --openSans: 'Open Sans', sans-serif;
     --light: 200;
     --standard: 400;
     --heavy: 600;
@@ -24,7 +26,11 @@ body {
     font-family: var(--manrope);
     font-weight: 400;
     outline: none;
-    background-color: lightgrey;
+    background-color: var(--colorNine);
+}
+
+.container {
+    margin: 2%;
 }
 
 
@@ -71,10 +77,8 @@ font-family: 'Open Sans', sans-serif; */
 
 /* #endregion */
 
-.container {
-    margin: 2%;
-}
 
+/* #region  Buttons */
 .btn {
     background-color: var(--colorOne);
     color: var(--colorSeven);
@@ -84,12 +88,13 @@ font-family: 'Open Sans', sans-serif; */
     height: 32px;
     display: inline-block;
     text-align: center;
-    outline:none;
+    outline: none;
     font-family: var(--openSans);
     font-weight: var(--standard);
     padding-left: 1%;
     padding-right: 1%;
 }
+
 
 .btn-blue {
     background-color: var(--colorThree);
@@ -117,7 +122,7 @@ font-family: 'Open Sans', sans-serif; */
 }
 
 .btn-inv-baby {
-    background-color: var(--colorSix);
+    background-color: var(--colorTen);
     color: var(--colorFive);
 }
 
@@ -126,17 +131,48 @@ font-family: 'Open Sans', sans-serif; */
     color: var(--colorTwo);
 }
 
+.btn-secondary {
+    background-color: var(--colorSeven);
+    color: var(--colorOne);
+    border-bottom: 3px solid var(--colorOne);
+    height: 32px;
+    box-shadow: 2px 3px 4px var(--shadow);
+    display: inline-block;
+    text-align: center;
+    outline: none;
+    font-family: var(--openSans);
+    font-weight: var(--standard);
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+.btn-secondary-blue {
+    background-color: var(--colorSeven);
+    color: var(--colorThree);
+    border-bottom: 3px solid var(--colorThree);
+}
+
+.btn-secondary-red {
+    background-color: var(--colorSeven);
+    color: var(--colorSix);
+    border-bottom: 3px solid var(--colorEight);
+}
+
 button:hover {
     box-shadow: 1px 2px 2px var(--shadow);
 }
 
-button:active{
+button:active {
     box-shadow: none;
 }
 
 .noShadow {
     box-shadow: none;
 }
+
+/* #endregion */
+
+
 #buttonCollection2 button {
     padding-right: 5%;
     margin-left: 5%;
