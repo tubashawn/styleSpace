@@ -24,6 +24,7 @@ body {
     font-family: var(--manrope);
     font-weight: 400;
     outline: none;
+    background-color: lightgrey;
 }
 
 
@@ -95,9 +96,34 @@ font-family: 'Open Sans', sans-serif; */
     color: var(--colorSeven);
 }
 
-.btn-cream {
+.btn-baby {
     background-color: var(--colorFive);
     color: var(--colorSix);
+}
+
+.btn-ltgrn {
+    background-color: var(--colorTwo);
+    color: var(--colorSix);
+}
+
+.btn-inv-default {
+    background-color: var(--colorSeven);
+    color: var(--colorOne);
+}
+
+.btn-inv-blue {
+    background-color: var(--colorSeven);
+    color: var(--colorThree);
+}
+
+.btn-inv-baby {
+    background-color: var(--colorSix);
+    color: var(--colorFive);
+}
+
+.btn-inv-ltgrn {
+    background-color: var(--colorSix);
+    color: var(--colorTwo);
 }
 
 button:hover {
