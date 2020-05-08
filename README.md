@@ -9,3 +9,6 @@
 
     Button styles include the default rounded edge button (.btn), and a secondary square button with a border-bottom to highlight the button (.btn-secondary). to change from default color scheme, include default class and the color scheme class you would like to change it to. Colors are added after the base class name (.btn .btn-blue). There are also inverted color schemes to swap the colors of the font and background. These are designed only for the default button style (.btn-inverted-blue).
     
+3. Navbars - basic navbar that is created with .nav and each nav element is created with an <a> element. Default alignment is to the left, color is light, elements are highlighted when you hover, the active element is set to a different color as well. 
+
+    Navbar options include navbar-dark and navbar-right

@@ -184,32 +184,65 @@ button:active {
     padding: 3%;
     margin-right: 5%;
 }
+
 /* #endregion */
 
 
-.topnav {
+/* #region  Navbars */
+
+.nav {
     background-color: var(--colorTen);
     overflow: hidden;
-  }
-  
-  /* Style the links inside the navigation bar */
-  .topnav a {
+}
+
+.nav a {
     float: left;
     color: var(--colorSeven);
     text-align: center;
-    padding: 14px 16px;
+    padding: 1% 1%;
     text-decoration: none;
-    font-size: 17px;
-  }
-  
-  /* Change the color of links on hover */
-  .topnav a:hover {
+    font-size: 18px;
+}
+
+/* Change the color of links on hover */
+.nav a:hover {
     background-color: var(--colorFour);
     color: var(--colorSix);
-  }
-  
-  /* Add a color to the active/current link */
-  .topnav a.active {
+}
+
+/* Add a color to the active/current link */
+.nav a.active {
     background-color: var(--colorOne);
     color: var(--colorSeven);
-  }
+}
+
+.nav-dark {
+    background-color: var(--colorSix);
+    color: var(--colorFour);
+}
+
+.nav-right a {
+    float: right;
+}
+
+/* #endregion */
+
+
+.expansion {
+    position: relative;
+    display: inline-block;
+}
+
+.expansion-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+.expansion:hover .expansion-content {
+    display: block;
+}
